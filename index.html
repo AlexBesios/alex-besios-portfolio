@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional CV - Dark Theme</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Configuration (DO NOT commit this file to GitHub) -->
+    <script src="config.js"></script>
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+      <div class="floating-particles"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <h2 class="logo-text">Portfolio</h2>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="typing-text">Hello, I'm</span>
+              <span class="name-highlight">Alex Besios</span>
+            </h1>
+            <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+            <p class="hero-description">
+              Passionate about creating beautiful, functional, and user-centered
+              digital experiences. I bring ideas to life through code and
+              design.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              <a href="#projects" class="btn btn-secondary">View Work</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/alex-besios-16a622299" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/AlexBesios" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/alexandros_mpesios/" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <!-- Profile Picture Placeholder -->
+            <div class="profile-picture">
+              <div class="image-placeholder">
+                <!-- Replace this div with your profile picture -->
+                <i class="fas fa-user"></i>
+                <p>Your Photo Here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>
+              I'm a passionate developer with a love for creating amazing
+              experiences
+            </h3>
+            <p>
+              With over 4 years of experience in CS university, I specialize
+              in creating modern, responsive websites and applications. I'm
+              passionate about clean code, user experience, and staying
+              up-to-date with the latest technologies.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open-source projects, or enjoying a good cup of
+              coffee while reading tech blogs.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <h4 class="stat-number">5+</h4>
+                <p class="stat-label">Projects Completed</p>
+              </div>
+              <div class="stat-item">
+                <h4 class="stat-number">4+</h4>
+                <p class="stat-label">Years Experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <!-- About Image -->
+            <img src="media/glowing-code-workspace-stockcake.jpg" alt="Alex Besios workspace" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">What I bring to the table</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="100"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="40"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Django</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="50"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Flask</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="65"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="100"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="60"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Tools & Others</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-docker"></i>
+                <span>Docker</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="40"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-terminal"></i>
+                <span>HTTPie</span>
+                <div class="skill-progress">
+                  <div class="progress-bar" data-progress="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <!-- Message Encryption/Decryption App Image -->
+              <img src="media/encryptDecrypt.webp" alt="Message Encryption/Decryption App" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Message Encryption/Decryption App</h3>
+              <p class="project-description">
+                A full-featured message encryption and decryption application
+                using cipher algorithms.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/AlexBesios/CyberSecurityProject" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/AlexBesios/CyberSecurityProject" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <!-- PID Controller Simulation Image -->
+              <img src="media/MainImage_1200x544-11.webp" alt="PID Controller Simulation" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PID Controller Simulation</h3>
+              <p class="project-description">
+                A PID controller simulation project that demonstrates the
+                principles of control systems and real-time feedback.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Control</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/AlexBesios/PID-Controller" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/AlexBesios/PID-Controller" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <!-- Project Image Placeholder -->
+              <div class="image-placeholder">
+                <i class="fas fa-chart-line"></i>
+                <p>Project Image</p>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">FuelGR clone - eshop</h3>
+              <p class="project-description">
+                In Progress.. <progress class=""></progress>
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Slim</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's talk about your project</h3>
+            <p>
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a question or just want to say hi, feel free to
+              reach out!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>alexbesios02@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+30 6981157320</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Athens, Greece</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Alex Besios. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
